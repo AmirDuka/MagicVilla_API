@@ -1,5 +1,6 @@
 ﻿using System;
 using MagicVilla_VillaAPI.Data;
+
 using MagicVilla_VillaAPI.Models;
 using MagicVilla_VillaAPI.Models.Dto;
 using Microsoft.AspNetCore.JsonPatch;
@@ -11,6 +12,12 @@ namespace MagicVilla_VillaAPI.Controllers
 	[ApiController]
 	public class VillaAPIController : ControllerBase
 	{
+
+		public VillaAPIController()
+		{
+
+		}
+
 		[HttpGet]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 
@@ -32,7 +39,7 @@ namespace MagicVilla_VillaAPI.Controllers
 			}
 			var villa = VillaStore.villaList.FirstOrDefault(u => u.Id == id);
 			if (villa == null)
-			{
+			{                            
 				return NotFound();
 			}
 
