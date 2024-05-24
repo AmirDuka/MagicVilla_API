@@ -39,4 +39,8 @@
     <Folder Include="Models\Dto\" />
     <Folder Include="Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Dto\VillaUpdateDTO.cs" Condition=" '$(EnableDefaultCompileItems)' == 'false' " />
+    <Compile Include="Models\Dto\VillaCreateDTO.cs" Condition=" '$(EnableDefaultCompileItems)' == 'false' " />
+  </ItemGroup>
 </Project>
