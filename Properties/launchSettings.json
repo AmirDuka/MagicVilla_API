@@ -40,6 +40,7 @@
     "MagicVilla_VillaAPI": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "swagger",
       "applicationUrl": "https://localhost:47883;http://localhost:58549",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
